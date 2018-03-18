@@ -2,7 +2,7 @@
 
 BooksWorld it's a web application that let's you read book, add new authors and their works, communicate with other users, leave feedback on the book and give it a rating.
 
-![](https://cdn1.savepice.ru/uploads/2018/3/18/eea5f330cb9ea31f81f005b7ab23b4c6-full.png)
+![](https://cdn1.savepice.ru/uploads/2018/3/18/3bf7c28d687e8768dc208169c6b66abe-full.png)
 
 ### Requirements ####
 - Python 3.5
