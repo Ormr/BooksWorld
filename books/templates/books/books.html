@@ -1,0 +1,30 @@
+{% extends 'books/base.html' %}
+{% block user %}{{ user }}{% endblock %}
+
+{% block body %}
+<div class=" books layout-form">
+	<div class="layout-positioner">
+		{% for book in books %}
+			<a href="{% url 'books:description' book.author.id book.id %}">
+				<div class="form">
+					
+					
+					<h2 class="book-title">{{ book.title }}</h2><br>
+					<div class="book-cover">
+						<img src="{{ book.cover }}" class="book-image">
+					</div>
+					<h4 class="book-year">{{ book.year }}</h4>
+
+					
+				</div>
+
+			</a>
+			{% if forloop.counter == 3 %}
+				<div class="line-break">
+					<!-- <h1>It's 3d</h1> -->
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

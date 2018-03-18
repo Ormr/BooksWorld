@@ -1,0 +1,18 @@
+{% extends 'books/base.html' %}
+{% block title %}Add Author{% endblock %}
+
+{% block body %}
+	<div class="layout-form">
+		<div class="form">
+			{% if error_message %}
+				<p>{{ error_message }}</p>
+			{% else %}
+				<form action="" method="post">
+					{% csrf_token %}
+					{% include 'books/form_template.html' %}
+					<button type="submit">Add Author</button>
+				</form>
+			{% endif %}
+		</div>
+	</div>
+{% endblock %}

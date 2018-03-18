@@ -1,0 +1,18 @@
+{% extends 'books/base.html' %}
+{% block title %}Registration{% endblock %}
+
+{% block body %}
+<div class="layout-form">
+	<div class="form">
+		<h3>Registration</h3>
+		{% if error_message %}
+			<p><strong>{{ error_message }}</strong></p>
+		{% endif %}
+		<form action="" method="post">
+			{% csrf_token %}
+			{% include 'loginsys/form_template.html' %}
+			<button type="submit">Registration</button>
+		</form>
+	</div>
+</div>
+{% endblock %}

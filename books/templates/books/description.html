@@ -1,0 +1,47 @@
+{% extends 'books/base.html' %}
+{% block user %}{{ user }}{% endblock %}
+
+{% block body %}
+
+
+<form action="{% url 'books:add_comment' book.author.id book.id%}" method="post">
+	{% csrf_token %}
+	
+
+	<article class="description">
+		<div class="positioner">
+			<div class="book-title">
+				<h2>{{ book.title }}</h2>
+				<hr class="hr--small">
+			</div>
+			<div class="book-cover">
+				<img src="{{ book.cover }}" class="book-image" class="cover">
+			</div>
+			<div class="description-text">
+				<h4 class="book-year">{{ book.year }}</h4>
+				<hr class="hr--small">
+				<p>{{ book.description }}</p>
+			</div>
+		</div>
+	</article>
+
+	<!-- Show form -->
+	<div class="form">
+	{% if error_message %}
+		<p>{{ error_message }}</p>
+	{% else %}
+		{% include 'books/form_template.html' %}
+		<input type="submit" name="field" value="Comment">
+	{% endif %}
+	</div>
+	<!-- Show comments -->
+	<section>
+		<div class="comments">
+			<h4>Comments here:</h4>
+			{% for comment in comments %}
+				<p><strong>{{ comment.user_name }}: </strong>{{ comment.comment_text }}</p>
+			{% endfor %}
+		</div>
+	</section>
+</form>
+{% endblock %}

@@ -1,0 +1,154 @@
+body{
+	/*background-color: #ffff99;*/
+	background: white url('../images/background.jpg');
+}
+
+footer{
+	padding: 1em;
+    color: lightgrey;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+article, section {
+	width: 70%;
+	margin: auto;
+	background-color: #fff;
+}
+
+.positioner {
+	width: 80%;
+	margin: auto;
+}
+
+
+
+.form-group1 .field textarea {
+	width: 80%;
+	/*border: 2px dashed red;*/
+
+}
+
+
+
+.description {
+	margin: auto;
+	/*border: 1px solid black;*/
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.description .positioner {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.description .book-cover {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 35%;
+}
+
+.book-year {
+	text-align: center;
+}
+
+.description .book-cover .book-image {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.description .description-text {
+	width: 100%;
+	margin: 10px 0 20px 0;
+}
+
+.book-title{
+	text-align: center;
+}
+
+.comments{
+	/*border: 1px solid black;*/
+	padding: 40px;
+}
+
+
+
+.hr--small {
+    margin: 20px auto;
+}
+
+hr, .hr--small, .hr--medium, .hr--large {
+    border-width: 1px 0 0 0;
+    width: 50px;
+}
+
+hr {
+    clear: both;
+    border-top: solid #1c1d1d;
+    border-width: 1px 0 0;
+    margin: 50px 0;
+    height: 0;
+}
+
+.form {
+	width: 65%;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+}
+
+.layout-form {
+	width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	background-color: #fff;
+
+}
+
+.books .form {
+	width: 25%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	clear: right;
+	float: left;
+
+	border: 2px solid darkgrey;
+
+}
+
+.books .book-cover {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 90%;
+	/*border: 2px dashed red;*/
+}
+
+.books .book-image {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.line-break {
+	clear: both;
+	height: 2px;
+	/*border: 2px solid red;*/
+}
+
+.layout-positioner {
+	margin: auto;
+	padding-left: 10%;
+	/*border: 2px dashed red;*/
+}
+
+.layout-positioner::after {
+	content: "";
+	clear: both;
+	display: table;
+}

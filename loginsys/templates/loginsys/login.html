@@ -1,0 +1,25 @@
+{% extends 'books/base.html' %}
+{% block title %}Login{% endblock %}
+
+{% block body %}
+{% if error_message %}
+	<p><strong>{{ error_message }}</strong></p>
+{% endif %}
+<div class="layout-form">
+	<div class="form">
+		<form action="" method="post">
+			{% csrf_token %}
+			<label for="id_username">
+				Username:
+			</label><br>
+			<input id="id_username" maxlength="50" name="username" type="text"><br>
+			<label for="id_password">
+				Password:
+			</label><br>
+			<input id="id_password" maxlength="50" name="password" type="password"><br>
+			<button type="submit">Login</button>
+			<a href="{% url 'loginsys:register' %}">Registration</a>
+		</form>
+	</div>
+</div>
+{% endblock %}

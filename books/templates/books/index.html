@@ -1,0 +1,21 @@
+{% extends 'books/base.html' %}
+{% block user %}{{ user }}{% endblock %}
+
+{% block body %}
+<div class="layout-form">
+	<div class="form">
+		<h3>Authors:</h3>
+
+		{% if author %}
+			<ul>
+				{% for person in author %}
+					<li><a href="{% url 'books:detail' person.id %}">{{ person.writer }}</a></li>
+				{% endfor %}
+			</ul>
+			
+		{% else %}
+			<p>You don't have any authors here</p>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}
