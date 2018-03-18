@@ -5,10 +5,10 @@ body{
 
 footer{
 	padding: 1em;
-    color: lightgrey;
-    background-color: black;
-    clear: left;
-    text-align: center;
+	color: lightgrey;
+	background-color: black;
+	clear: left;
+	text-align: center;
 }
 
 article, section {
@@ -78,20 +78,20 @@ article, section {
 
 
 .hr--small {
-    margin: 20px auto;
+	margin: 20px auto;
 }
 
 hr, .hr--small, .hr--medium, .hr--large {
-    border-width: 1px 0 0 0;
-    width: 50px;
+	border-width: 1px 0 0 0;
+	width: 50px;
 }
 
 hr {
-    clear: both;
-    border-top: solid #1c1d1d;
-    border-width: 1px 0 0;
-    margin: 50px 0;
-    height: 0;
+	clear: both;
+	border-top: solid #1c1d1d;
+	border-width: 1px 0 0;
+	margin: 50px 0;
+	height: 0;
 }
 
 .form {
@@ -111,8 +111,8 @@ hr {
 }
 
 .books .form {
-	width: 25%;
-	margin-right: 5%;
+	width: 30%;
+	margin-right: 20px;
 	margin-bottom: 20px;
 	clear: right;
 	float: left;
@@ -125,14 +125,15 @@ hr {
 	overflow: hidden;
 	margin: 0 auto;
 	width: 90%;
+	height: 320px;
 	/*border: 2px dashed red;*/
 }
 
 .books .book-image {
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
 	text-align: center;
-	width: 100%;
+	height: 100%;
 }
 
 .line-break {
@@ -143,7 +144,7 @@ hr {
 
 .layout-positioner {
 	margin: auto;
-	padding-left: 10%;
+	padding-left: 5%;
 	/*border: 2px dashed red;*/
 }
 
